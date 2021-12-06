@@ -1,1 +1,1 @@
-web: gunicorn wsgi:aWEBSITEEKFARAheroku.py
+web: gunicorn wsgi:app
