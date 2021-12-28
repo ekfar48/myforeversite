@@ -42,6 +42,10 @@ site_home = """
 def home_view():
     return site_home
 
+@app.route(f'/d/<string:file_ekfara>')
+def download(file_ekfara):
+    return send_file(f'\\yy\\'+file_ekfara)
+    
 
 if __name__ == "__main__":
         app.run()
